@@ -1,19 +1,21 @@
 ---
+
 import SectionContainer from "../components/SectionContainer.astro";
 import ProjectCard from "../components/ProjectCard.astro";
 import TextGradient from "../components/TextGradient.astro";
 import Layout from "../layouts/Layout.astro";
+
 ---
 
 <Layout title="Kazz's Portfolio" description="Come check what Kazz can do for your website!">
-  <main class="mt-16 md:mt-48 flex flex-col gap-12 md:gap-24">
+  <main class="mt-16 md:mt-48 flex flex-col gap-20 md:gap-36">
     <SectionContainer>
       <div
         class="flex flex-col md:flex-row justify-center items-center text-center gap-8 md:gap-12"
       >
         <img
           class="size-40 md:size-48 rounded-full border-4 border-orange-400 border-opacity-80 shadow-md shadow-amber-500/40"
-          src="/pfp.webp"
+          src="/images/pfp.webp"
           alt="Kazz's Profile Picture"
         />
         <div>
@@ -24,8 +26,8 @@ import Layout from "../layouts/Layout.astro";
               >KazzDev.</TextGradient
             >
           </h1>
-          <h2 class="text-xl md:text-3xl pt-1 md:pt-3 italic text-slate-200">
-            And I am a Junior
+          <h2 class="text-xl md:text-3xl pt-1 md:pt-2 italic text-slate-200">
+            A Junior
             <TextGradient class="from-orange-200 to-amber-300"
               >Web Developer</TextGradient
             >
@@ -43,17 +45,25 @@ import Layout from "../layouts/Layout.astro";
     </SectionContainer>
 
     <SectionContainer>
-      <h1 class="text-3xl md:text-4xl font-bold mb-4 md:mb-5">My Projects</h1>
+      <h1 class="text-3xl md:text-4xl font-bold mb-5 md:mb-7">
+		<span class="text-amber-200/80">&lt;/&gt;</span>
+		<span class="text-amber-300/90 ml-1">My Projects</span>
+	</h1>
 
-      <div class="flex flex-col gap-3 md:gap-4">
-        <ProjectCard>
-          <h2 class="text-2xl font-bold">Project 1</h2>
-          <p class="text-lg">This is a description of the project</p>
-        </ProjectCard>
-        <ProjectCard>
-          <h2 class="text-2xl font-bold">Project 2</h2>
-          <p class="text-lg">This is a description of the project</p>
-        </ProjectCard>
+      <div class="flex flex-col gap-4 md:gap-6">
+        <ProjectCard
+			title="Hp Tracker for TTRPG"
+			description="A way to track your own HP in a TTRPG, with buttons to heal, receive damage, get Temp HP and even fully heal."
+			link="#/project1"
+			image="/images/projects/project01.png"
+		/>
+        <ProjectCard
+			title="My own Portfolio"
+			description="This is actually this very self project! A portfolio to showcase my skills and projects. Sorry for the recursion."
+			link="#/project1"
+			image="/images/projects/project02.png"
+		/>
+        
       </div>
     </SectionContainer>
   </main>
