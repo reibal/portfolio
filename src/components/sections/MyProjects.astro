@@ -1,0 +1,33 @@
+---
+import SectionContainer from "../SectionContainer.astro";
+import ProjectCard from "../ProjectCard.astro";
+
+// Projects Data
+const projects = [
+  {
+    title: "Hp Tracker for TTRPG",
+    description:
+      "A way to track your own HP in a TTRPG, with buttons to heal, receive damage, get Temp HP and even fully heal.",
+    link: "https://roleplay-turn-tracker.netlify.app/",
+    image: "/images/projects/project01.png",
+  },
+  {
+    title: "My own Portfolio",
+    description:
+      "This is actually this very self project! A portfolio to showcase my skills and projects. Sorry for the recursion.",
+    link: "https://kazz-dev-portfolio.netlify.app/",
+    image: "/images/projects/project02.png",
+  },
+];
+---
+
+<SectionContainer>
+  <h1 class="text-3xl md:text-4xl font-bold mb-5 md:mb-7">
+    <span class="text-orange-400/95">&lt;/&gt;</span>
+    <span class="text-amber-400/95 ml-1">My Projects</span>
+  </h1>
+
+  <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    {projects.map((project) => <ProjectCard {...project} />)}
+  </section>
+</SectionContainer>

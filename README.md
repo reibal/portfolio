@@ -8,10 +8,8 @@ PS: The portfolio is currently in Spanish only (will have English too, eventuall
 
 
 ## ToDo List
-- Show list of projects
-	- (use mockup tool: https://www.shots.so)
+- Add a "Contact Me" button under the presentation
 - Show work experience
-- Show known technologies
 - Show soft skills
 - Implement Light/Dark Mode
 - Implement English/Spanish languages
