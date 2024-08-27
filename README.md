@@ -8,8 +8,8 @@ PS: The portfolio is currently in Spanish only (will have English too, eventuall
 
 
 ## ToDo List
-- Add a "Contact Me" button under the presentation
+- Add an "About Me" section
 - Show work experience
-- Show soft skills
+- Show soft skills* (still have to consider if it's worth)
 - Implement Light/Dark Mode
 - Implement English/Spanish languages
