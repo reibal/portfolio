@@ -1,5 +1,12 @@
 ---
 import SectionContainer from "../SectionContainer.astro";
+
+// Defining netlify field in html form
+declare module "react" {
+  interface FormHTMLAttributes<T> {
+    netlify?: string;
+  }
+}
 ---
 
 <SectionContainer>
