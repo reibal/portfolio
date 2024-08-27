@@ -12,20 +12,23 @@ interface FormHTMLAttributes<T> {
     <span class="text-orange-400/95">&lt;/&gt;</span>
     <span class="text-amber-400/95 ml-1">Contact me</span>
   </h1>
-  <form class="flex flex-col gap-4" data-netlify="true">
+  <form class="flex flex-col gap-4" name="contact" data-netlify="true">
     <input
+      name="name"
       type="text"
       placeholder="Name"
       required
       class="w-full px-4 py-2 rounded-md bg-gray-700 border border-gray-600"
     />
     <input
+      name="email"
       type="email"
       placeholder="Email"
       required
       class="w-full px-4 py-2 rounded-md bg-gray-700 border border-gray-600"
     />
     <textarea
+      name="message"
       placeholder="Type your message here"
       required
       class="w-full px-4 py-2 rounded-md bg-gray-700 border border-gray-600 h-32"
