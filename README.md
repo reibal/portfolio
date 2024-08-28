@@ -11,6 +11,5 @@ PS: The portfolio is currently in Spanish only (will have English too, eventuall
 - Add an "About Me" section
 - Show work experience
 - Show soft skills* (still have to consider if it's worth)
-- Implement Light/Dark Mode
 - Implement English/Spanish languages
 - Add actual functionality to footer icons
