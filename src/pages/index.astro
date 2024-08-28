@@ -1,10 +1,10 @@
 ---
 // Sections
 import Layout from "../layouts/Layout.astro";
-import Header from '../components/sections/Header.astro';
-import MyProjects from '../components/sections/MyProjects.astro'
-import MySkills from '../components/sections/MySkills.astro'
-import ContactMe from '../components/sections/ContactMe.astro'
+import Header from "../components/sections/Header.astro";
+import MyProjects from "../components/sections/MyProjects.astro";
+import MySkills from "../components/sections/MySkills.astro";
+import ContactMe from "../components/sections/ContactMe.astro";
 import Footer from "../components/sections/Footer.astro";
 ---
 
@@ -15,16 +15,24 @@ import Footer from "../components/sections/Footer.astro";
   <main class="mt-24 md:mt-48 flex flex-col gap-20 md:gap-32">
     <Header />
 
-    <div class="bg-gradient-to-b from-transparent via-slate-800/40 to-slate-950/5 mt-8 py-12">
-      <MyProjects />
-    </div>
+    <MyProjects />
 
     <MySkills />
 
-    <div class="bg-slate-800/50 pt-16 pb-20">
+    <div
+      class="bg-slate-200/60 dark:bg-slate-800/50 pt-8 md:pt-12 pb-10 md:pb-20"
+    >
       <ContactMe />
     </div>
   </main>
 
   <Footer />
 </Layout>
+
+<style is:global>
+	/** Scrollbar color change for dark mode */
+	::-webkit-scrollbar-thumb {
+		background-color: rgba(110, 0, 0, 0.6);
+		border-radius: 10px;
+	}
+</style>

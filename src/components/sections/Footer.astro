@@ -4,17 +4,17 @@ import LinkedinIcon from "../../components/icons/LinkedinIcon.astro";
 import EmailIcon from "../../components/icons/EmailIcon.astro";
 ---
 
-<footer class="bg-gray-800 text-gray-200 pt-6 pb-2">
+<footer class="bg-gray-300 dark:bg-gray-800 text-black dark:text-gray-200 pt-4 md:pt-6 pb-3 md:pb-2">
   <div class="container mx-auto px-4">
     <p class="text-center mb-4 text-lg">Find me on social media!</p>
-    <div class="flex justify-center gap-4 mb-4 text-5xl">
-      <a href="https://github.com/KazzK94" class="hover:text-orange-500 hover:scale-110 transition-all">
+    <div class="flex justify-center gap-4 mb-4 text-4xl md:text-5xl">
+      <a href="https://github.com/KazzK94" class="hover:text-orange-500 hover:scale-110 transition-all" aria-label="Visit my GitHub profile">
         <GithubIcon />
       </a>
-      <a href="#niy" class="hover:text-orange-500 hover:scale-110 transition-all">
+      <a href="#niy" class="hover:text-orange-500 hover:scale-110 transition-all" aria-label="Visit my LinkedIn">
         <LinkedinIcon />
       </a>
-      <a href="#niy" class="hover:text-orange-500 hover:scale-110 transition-all">
+      <a href="#niy" class="hover:text-orange-500 hover:scale-110 transition-all" aria-label="Send me an e-mail">
         <EmailIcon />
       </a>
     </div>
