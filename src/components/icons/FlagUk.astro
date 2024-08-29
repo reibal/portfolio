@@ -1,0 +1,19 @@
+---
+const { props } = Astro;
+---
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" {...props}>
+  <clipPath id="t">
+    <path d="M320,240 V0 h-48 v240 h-192 v48 h192 v240 h48 v-240 h192 v-48 z"/>
+  </clipPath>
+  <clipPath id="s">
+    <path d="M0,0 v480 h640 v-480 z"/>
+  </clipPath>
+  <g clip-path="url(#s)">
+    <path d="M0,0 v480 h640 v-480 z" fill="#012169"/>
+    <path d="M0,0 L640,480 M640,0 L0,480" stroke="#fff" stroke-width="48"/>
+    <path d="M0,0 L640,480 M640,0 L0,480" clip-path="url(#t)" stroke="#C8102E" stroke-width="32"/>
+    <path d="M320,0 v480 M0,240 h640" stroke="#fff" stroke-width="80"/>
+    <path d="M320,0 v480 M0,240 h640" stroke="#C8102E" stroke-width="48"/>
+  </g>
+</svg>

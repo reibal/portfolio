@@ -1,6 +1,7 @@
 ---
-import Background from '../components/Background.astro';
-import ThemeToggleButton from '../components/ThemeToggleButton.astro'
+import Background from "../components/Background.astro";
+import ThemeToggleButton from "../components/togglers/ThemeToggleButton.astro";
+import LanguageToggleButton from '../components/togglers/LanguageToggleButton.astro';
 
 interface Props {
   title: string;
@@ -21,8 +22,18 @@ const { title, description } = Astro.props;
     <title>{title}</title>
   </head>
   <body class="text-black dark:text-white">
-	<ThemeToggleButton />
-	<Background />
+    <ThemeToggleButton />
+	<LanguageToggleButton />
+    <Background />
     <slot />
   </body>
 </html>
+
+<style is:global>
+  .text-gradient-to-br {
+    @apply bg-gradient-to-br inline-block text-transparent bg-clip-text;
+  }
+  .text-gradient-to-b {
+    @apply bg-gradient-to-b inline-block text-transparent bg-clip-text;
+  }
+</style>

@@ -1,0 +1,19 @@
+{
+	"META_TITLE": "Kazz's Portfolio [EN]",
+	"META_DESCRIPTION": "Come check what I can do for your website!",
+	"HEADER_TITLE": "Hello, I am %%name%%",
+	"HEADER_SUBTITLE": "A junior %%webdev%%",
+	"HEADER_SUBTITLE_WEBDEV": "Web Developer",
+	"HEADER_TEXT_1": "My goal is to create %%highlight%% of all kinds.",
+	"HEADER_TEXT_1_HIGHLIGHT": "unique and astonishing websites",
+	"HEADER_TEXT_2": "Sure, I know there is always %%highlight%%, but hey... that's the best part!",
+	"HEADER_TEXT_2_HIGHLIGHT": "so much more to learn",
+	"MY_PROJECTS": "My Projects",
+	"GO_TO_PROJECT": "Go to project",
+	"MY_SKILLS": "My Skills",
+	"CONTACT_ME": "Contact Me",
+	"FORM_NAME_PLACEHOLDER": "Name",
+	"FORM_EMAIL_PLACEHOLDER": "Email",
+	"FORM_MESSAGE_PLACEHOLDER": "Type your message here...",
+	"FORM_SEND_BUTTON": "Send"
+}

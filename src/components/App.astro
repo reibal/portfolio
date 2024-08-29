@@ -1,0 +1,32 @@
+---
+// Sections
+import Layout from "../layouts/Layout.astro";
+import Header from "./sections/Header.astro";
+import MyProjects from "./sections/MyProjects.astro";
+import MySkills from "./sections/MySkills.astro";
+import ContactMe from "./sections/ContactMe.astro";
+import Footer from "./sections/Footer.astro";
+
+// i18n
+import { getI18n } from "../i18n/index.ts";
+const currentLocale = Astro.props.currentLocale
+const i18n = getI18n({ currentLocale });
+---
+
+<Layout title={i18n.META_TITLE} description={i18n.META_DESCRIPTION}>
+  <main class="mt-24 md:mt-48 flex flex-col gap-20 md:gap-32">
+    <Header />
+
+    <MyProjects />
+
+    <MySkills />
+
+    <div
+      class="bg-slate-200/60 dark:bg-slate-800/50 pt-8 md:pt-12 pb-10 md:pb-20"
+    >
+      <ContactMe />
+    </div>
+  </main>
+
+  <Footer />
+</Layout>

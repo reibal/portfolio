@@ -1,0 +1,29 @@
+---
+// i18n import
+import { getI18n } from "../i18n";
+
+// i18n setup
+const { currentLocale = "es" } = Astro;
+const i18n = getI18n({ currentLocale });
+
+// Recibir: "Hola, soy %%esteEsElReplaceFrom%%."
+// Devolver: "Hola, soy <slot />.""
+
+const { i18nLocalizedText, replaceFrom, replaceTo, replacementClass, spaceBeforeReplacement, spaceAfterReplacement } = Astro.props;
+---
+
+<>
+  {
+    i18nLocalizedText
+      .split(replaceFrom)
+      .map((part: string, index: number, parts: string[]) => {
+        if (part === "") return null;
+        return (
+          <>
+            {part}
+            {index < parts.length - 1 && <span class={replacementClass || ''}>{replaceTo}</span>}
+          </>
+        );
+      })
+  }
+</>

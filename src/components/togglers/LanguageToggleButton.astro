@@ -1,0 +1,22 @@
+---
+import FlagSpain from "../icons/FlagSpain.astro";
+import FlagUk from "../icons/FlagUk.astro";
+
+const { currentLocale = 'es', props } = Astro;
+---
+
+<a
+  id="localizationToggle"
+  href={currentLocale === "es" ? "/en" : "/"}
+  class="fixed top-6 md:top-8 right-20 md:right-32 rounded z-20 transition-all duration-500"
+  title={currentLocale === "es" ? "Change to English" : "Cambiar a Español"}
+  aria-label="Toggle language"
+  {...props}
+>
+  {
+    currentLocale === "es" 
+		? <FlagUk class="w-10 rounded" />
+		: <FlagSpain class="w-10 rounded" />
+    
+  }
+</a>

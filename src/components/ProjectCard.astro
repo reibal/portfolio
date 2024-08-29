@@ -2,10 +2,17 @@
 import ExternalLinkIcon from "./icons/ExternalLinkIcon.astro";
 
 const { title, description, link, image } = Astro.props;
+
+// i18n import
+import { getI18n } from "../i18n";
+// i18n setup
+const { currentLocale } = Astro;
+const i18n = getI18n({ currentLocale });
 ---
 
 <article
   class=`
+	flex flex-col
   	bg-gray-50 dark:bg-gray-700/80 
 	shadow-lg dark:shadow-white/10 
 	rounded-lg cursor-pointer hover:scale-105
@@ -18,21 +25,27 @@ const { title, description, link, image } = Astro.props;
     alt={title}
     class="w-full h-48 object-cover rounded-t-lg [mask-image:linear-gradient(to_bottom,black_95%,transparent);]"
   />
-  <div class="p-4">
+
+  <div class="p-4 flex-grow">
     <h1
       class="text-2xl font-semibold mb-2 text-amber-900 drop-shadow dark:text-amber-400 cursor-pointer"
     >
-      {title}
+      {title[currentLocale || "es"]}
     </h1>
-    <p class="text-gray-600 dark:text-gray-200/90 cursor-pointer">{description}</p>
+    <p class="text-gray-600 dark:text-gray-200/90 cursor-pointer flex-grow">
+      {description[currentLocale || "es"]}
+    </p>
+  </div>
 
+  <div class="p-4 pt-1">
     <a
-      class="bg-black hover:bg-black/90 dark:hover:bg-black/80 shadow-sm dark:shadow-white/30 transition-colors text-white/90 text-lg rounded-lg px-4 py-2 mt-4 w-full text-center flex items-center justify-center gap-2"
+      class="bg-black hover:bg-black/90 dark:hover:bg-black/80 shadow-sm dark:shadow-white/30 transition-colors text-white/90 text-lg rounded-lg px-4 py-2 w-full text-center flex items-center justify-center gap-2"
       href=`${link}`
       target="_blank"
       rel="noreferrer"
     >
-      Check the preview <ExternalLinkIcon class="inline-block " />
+      {i18n.GO_TO_PROJECT}
+      <ExternalLinkIcon class="inline-block" />
     </a>
   </div>
 </article>

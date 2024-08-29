@@ -1,42 +1,44 @@
 ---
 import SectionContainer from "../SectionContainer.astro";
 
-// Defining netlify field in html form
-interface FormHTMLAttributes<T> {
-  netlify?: boolean;
-}
+// i18n import
+import { getI18n } from "../../i18n";
+// i18n setup
+const { currentLocale } = Astro;
+const i18n = getI18n({ currentLocale });
+
 ---
 
 <SectionContainer>
   <h1 class="text-3xl md:text-4xl font-bold mb-5 md:mb-7 drop-shadow">
     <span class="text-orange-500/95 dark:text-orange-400">&lt;/&gt;</span>
-    <span class="text-amber-500 dark:text-amber-400 ml-1">Contact me</span>
+    <span class="text-amber-500 dark:text-amber-400 ml-1">{i18n.CONTACT_ME}</span>
   </h1>
   <form class="flex flex-col gap-4" name="contact" data-netlify="true">
     <input
       name="name"
       type="text"
-      placeholder="Name"
+      placeholder={i18n.FORM_NAME_PLACEHOLDER}
       required
       class="w-full px-4 py-2 rounded-md dark:bg-gray-700 border dark:border-gray-600"
     />
     <input
       name="email"
       type="email"
-      placeholder="Email"
+      placeholder={i18n.FORM_EMAIL_PLACEHOLDER}
       required
       class="w-full px-4 py-2 rounded-md dark:bg-gray-700 border dark:border-gray-600"
     />
     <textarea
       name="message"
-      placeholder="Type your message here"
+      placeholder={i18n.FORM_MESSAGE_PLACEHOLDER}
       required
-      class="w-full px-4 py-2 rounded-md dark:bg-gray-700 border dark:border-gray-600 h-32"
+      class="w-full px-4 py-2 rounded-md overflow-y-auto dark:bg-gray-700 border dark:border-gray-600 h-32"
     ></textarea>
     <button
       type="submit"
-      class="w-full text-white text-lg bg-orange-700 hover:bg-orange-700/90 px-6 py-2 rounded-md"
-      >Send</button
+      class="w-full text-white text-lg bg-orange-500 hover:bg-orange-600 dark:bg-orange-700 dark:hover:bg-orange-700/90 px-6 py-2 rounded-md"
+      >{i18n.FORM_SEND_BUTTON}</button
     >
   </form>
 </SectionContainer>
