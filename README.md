@@ -4,7 +4,7 @@ As for now, this is a work in progress. It will eventually be a cool portfolio t
 
 Whoever is reading this, have a good day! ♥
 
-PS: The portfolio is currently in Spanish only (will have English too, eventually).
+PS: The portfolio is currently in English only (will have Spanish too, eventually).
 
 
 ## ToDo List
