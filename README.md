@@ -12,3 +12,6 @@ PS: The portfolio is currently in English only (will have Spanish too, eventuall
 - Show work experience
 - Show soft skills* (still have to consider if it's worth)
 - Add actual functionality to footer icons
+- Add technologies used on each project
+- Add tags on projects, such as #frontend, #backend, #api, and so on...
+- Add icons for technlologies, for both My Projects and My Skills
