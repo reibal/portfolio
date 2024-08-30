@@ -15,5 +15,6 @@
 	"FORM_NAME_PLACEHOLDER": "Nombre",
 	"FORM_EMAIL_PLACEHOLDER": "Correo Electrónico",
 	"FORM_MESSAGE_PLACEHOLDER": "Escribe aquí tu mensaje...",
-	"FORM_SEND_BUTTON": "Enviar"
+	"FORM_SEND_BUTTON": "Enviar",
+	"FOOTER_FIND_ME_ON_SOCIAL_MEDIA": "¡Encuéntrame en mis redes sociales!"
 }
