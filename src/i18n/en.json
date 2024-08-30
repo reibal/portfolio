@@ -2,7 +2,7 @@
 	"META_TITLE": "Kazz's Portfolio [EN]",
 	"META_DESCRIPTION": "Come check what I can do for your website!",
 	"HEADER_TITLE": "Hello, I am %%name%%",
-	"HEADER_SUBTITLE": "A junior %%webdev%%",
+	"HEADER_SUBTITLE": "Junior %%webdev%%",
 	"HEADER_SUBTITLE_WEBDEV": "Web Developer",
 	"HEADER_TEXT_1": "My goal is to create %%highlight%% of all kinds.",
 	"HEADER_TEXT_1_HIGHLIGHT": "unique and astonishing websites",
