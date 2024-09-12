@@ -5,6 +5,7 @@ As for now, this is a work in progress. It will eventually be a cool portfolio t
 Also, if you are reading this, have a good day! ♥
 
 ## ToDo List
+- Include a different icon for each section title (instead of </> for all of them)
 - Add an "About Me" section (include soft skills here)
 - Show work experience
 - Add actual functionality to footer icons

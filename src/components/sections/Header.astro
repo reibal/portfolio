@@ -24,12 +24,12 @@ const i18n = getI18n({ currentLocale });
         <LocalizedText
           i18nLocalizedText={i18n.HEADER_TITLE}
           replaceFrom="%%name%%"
-          replaceTo="Kazz"
+          replaceTo="Kazz."
           replacementClass="text-gradient-to-br from-orange-500 via-amber-500/80 to-orange-600 dark:from-orange-400/85 dark:via-amber-300 dark:to-orange-400 font-bold"
         />
       </h1>
       <h2
-        class="text-xl md:text-3xl pt-1 md:pt-2 italic text-black/70 dark:text-slate-200"
+        class="text-xl md:text-3xl mt-1 md:mt-3 italic text-black/70 dark:text-slate-200"
       >
         <LocalizedText
           i18nLocalizedText={i18n.HEADER_SUBTITLE}
@@ -44,13 +44,13 @@ const i18n = getI18n({ currentLocale });
           i18nLocalizedText={i18n.HEADER_TEXT_1}
           replaceFrom="%%highlight%%"
 		  replaceTo={i18n.HEADER_TEXT_1_HIGHLIGHT}
-		  replacementClass="text-amber-500 dark:text-amber-200"
+		  replacementClass="text-amber-500 dark:text-amber-300"
           />
         <LocalizedText
           i18nLocalizedText={i18n.HEADER_TEXT_2}
           replaceFrom="%%highlight%%"
           replaceTo={i18n.HEADER_TEXT_2_HIGHLIGHT}
-          replacementClass="text-amber-500 dark:text-amber-200 italic"
+          replacementClass="text-amber-500 dark:text-amber-300"
         />
       </p>
     </div>
