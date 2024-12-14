@@ -25,7 +25,8 @@ const i18n = getI18n({ currentLocale });
         <GithubIcon />
       </a>
       <a
-        id="linkedinIcon"
+		href="https://www.linkedin.com/in/ivan-kazz/"
+		target="_blank"
         class="hover:text-orange-500 hover:scale-110 transition-all cursor-pointer"
         aria-label="Visit my LinkedIn"
       >
@@ -66,13 +67,11 @@ const i18n = getI18n({ currentLocale });
 </footer>
 
 <script>
-  const linkedinIcon = document.getElementById("linkedinIcon");
   const emailIcon = document.getElementById("emailIcon");
 
   const modal = document.getElementById("niyModal") as HTMLDialogElement;
 
   const openModal = () => modal.showModal();
 
-  linkedinIcon?.addEventListener("click", openModal);
   emailIcon?.addEventListener("click", openModal);
 </script>

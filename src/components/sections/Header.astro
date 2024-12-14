@@ -15,7 +15,7 @@ const i18n = getI18n({ currentLocale });
     class="flex flex-col md:flex-row justify-center items-center text-center gap-8 md:gap-12"
   >
     <img
-      class="size-40 md:size-48 rounded-full border-4 border-amber-600 dark:border-orange-400 border-opacity-80 shadow-md shadow-amber-500/40"
+      class="size-40 md:size-48 aspect-square rounded-full border-4 border-amber-600 dark:border-orange-400 border-opacity-80 shadow-md shadow-amber-500/40"
       src="/images/pfp.webp"
       alt="Kazz's Profile Picture"
     />
@@ -24,7 +24,7 @@ const i18n = getI18n({ currentLocale });
         <LocalizedText
           i18nLocalizedText={i18n.HEADER_TITLE}
           replaceFrom="%%name%%"
-          replaceTo="Kazz."
+          replaceTo=`${i18n.DEV_NAME}.`
           replacementClass="text-gradient-to-br from-orange-500 via-amber-500/80 to-orange-600 dark:from-orange-400/85 dark:via-amber-300 dark:to-orange-400 font-bold"
         />
       </h1>
