@@ -1,6 +1,7 @@
 ---
 import SectionContainer from "../SectionContainer.astro";
 import LocalizedText from "../LocalizedText.astro";
+import Badge from "../Badge.astro";
 
 // i18n import
 import { getI18n } from "../../i18n";
@@ -39,13 +40,13 @@ const i18n = getI18n({ currentLocale });
         />
       </h2>
 
-      <p class="mt-4 mx-auto md:text-lg text-pretty">
+      <p class="my-4 mx-auto md:text-lg text-pretty">
         <LocalizedText
           i18nLocalizedText={i18n.HEADER_TEXT_1}
           replaceFrom="%%highlight%%"
-		  replaceTo={i18n.HEADER_TEXT_1_HIGHLIGHT}
-		  replacementClass="text-amber-500 dark:text-amber-300"
-          />
+          replaceTo={i18n.HEADER_TEXT_1_HIGHLIGHT}
+          replacementClass="text-amber-500 dark:text-amber-300"
+        />
         <LocalizedText
           i18nLocalizedText={i18n.HEADER_TEXT_2}
           replaceFrom="%%highlight%%"
@@ -53,6 +54,10 @@ const i18n = getI18n({ currentLocale });
           replacementClass="text-amber-500 dark:text-amber-300"
         />
       </p>
+
+      <Badge class="text-sm" color="green">
+        {i18n.AVAILABLE_FOR_WORK}
+      </Badge>
     </div>
   </div>
 </SectionContainer>

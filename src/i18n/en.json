@@ -9,6 +9,7 @@
 	"HEADER_TEXT_1_HIGHLIGHT": "unique and astonishing websites",
 	"HEADER_TEXT_2": "Sure, I know there is always %%highlight%%, but hey... that's the best part!",
 	"HEADER_TEXT_2_HIGHLIGHT": "so much more to learn",
+	"AVAILABLE_FOR_WORK": "Available for work",
 	"MY_PROJECTS": "My Projects",
 	"GO_TO_PROJECT": "Go to project",
 	"MY_SKILLS": "My Skills",
@@ -16,6 +17,5 @@
 	"FORM_NAME_PLACEHOLDER": "Name",
 	"FORM_EMAIL_PLACEHOLDER": "Email",
 	"FORM_MESSAGE_PLACEHOLDER": "Type your message here...",
-	"FORM_SEND_BUTTON": "Send",
-	"FOOTER_FIND_ME_ON_SOCIAL_MEDIA": "Find me on social media!"
+	"FORM_SEND_BUTTON": "Send"
 }
