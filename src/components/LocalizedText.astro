@@ -9,7 +9,7 @@ const i18n = getI18n({ currentLocale });
 // Recibir: "Hola, soy %%esteEsElReplaceFrom%%."
 // Devolver: "Hola, soy <slot />.""
 
-const { i18nLocalizedText, replaceFrom, replaceTo, replacementClass } =
+const { i18nLocalizedText, replaceFrom, replaceTo, className } =
   Astro.props;
 
 const wordIndex = i18nLocalizedText.indexOf(replaceFrom);
@@ -19,7 +19,7 @@ const wordIndex = i18nLocalizedText.indexOf(replaceFrom);
   {
     wordIndex === 0 ? (
       <>
-        <span class={replacementClass || ""}>{replaceTo}</span>
+        <span class={className || ""}>{replaceTo}</span>
         {i18nLocalizedText.replace(replaceFrom, "")}
       </>
     ) : (
@@ -31,7 +31,7 @@ const wordIndex = i18nLocalizedText.indexOf(replaceFrom);
             <>
               {text}
               {index < texts.length - 1 && (
-                <span class={replacementClass || ""}>{replaceTo}</span>
+                <span class={className || ""}>{replaceTo}</span>
               )}
             </>
           );
