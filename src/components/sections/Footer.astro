@@ -44,12 +44,12 @@ const i18n = getI18n({ currentLocale });
   {/* TODO: Remove once LinkedIn and Email have been added */}
   <dialog
     id="niyModal"
-    class="border-2 p-4 rounded-lg text-center dark:border-slate-950 dark:bg-slate-800 dark:text-white/80"
+    class="border-2 p-4 rounded-lg text-center border-slate-950 dark:bg-slate-800 dark:text-white/80"
   >
-    <h1 class="text-xl font-bold mb-1">
+    <h1 class="text-2xl font-bold mb-1">
       {currentLocale === "en" ? "I'm very sorry!" : "¡Mil disculpas!"}
     </h1>
-    <p class="text-center text-lg">
+    <p class="text-center">
       {
         currentLocale === "en"
           ? "This content has not been implemented yet. Please come back later."
@@ -57,7 +57,7 @@ const i18n = getI18n({ currentLocale });
       }
     </p>
     <button
-      class="block mx-auto mt-4 p-2 bg-orange-500 text-white dark:bg-orange-800 rounded-md"
+      class="block mx-auto mt-4 p-2 bg-orange-500 text-white dark:bg-orange-800 border-2 border-orange-600/80 rounded-md"
       onclick="this.closest('dialog').close()"
     >
       {currentLocale === "en" ? "Understood" : "Entendido"}
