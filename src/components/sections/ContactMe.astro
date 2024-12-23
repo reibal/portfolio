@@ -6,13 +6,14 @@ import { getI18n } from "../../i18n";
 // i18n setup
 const { currentLocale } = Astro;
 const i18n = getI18n({ currentLocale });
-
 ---
 
 <SectionContainer>
-  <h1 class="text-3xl md:text-4xl font-bold mb-5 md:mb-7 drop-shadow">
+  <h1 class="text-3xl md:text-4xl font-bold mb-5 md:mb-7">
     <span class="text-orange-500/95 dark:text-orange-400">&lt;/&gt;</span>
-    <span class="text-amber-500 dark:text-amber-400 ml-1">{i18n.CONTACT_ME}</span>
+    <span class="text-amber-500 dark:text-amber-400 ml-1"
+      >{i18n.CONTACT_ME}</span
+    >
   </h1>
   <form class="flex flex-col gap-4" name="contact" data-netlify="true">
     <input
