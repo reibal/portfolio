@@ -1,8 +1,8 @@
 {
 	"META_TITLE": "Portfolio de Kazz [ES]",
 	"META_DESCRIPTION": "Echa un vistazo a lo que puedo hacer para tu sitio web!",
-	"HEADER_TITLE": "Hola, soy %%name%%",
-	"DEV_NAME": "Iván",
+	"HEADER_TITLE": "%%name%%",
+	"DEV_NAME": "Iván Reina Ballester",
 	"HEADER_SUBTITLE": "%%webdev%%",
 	"HEADER_SUBTITLE_WEBDEV": "Desarrollador Web Front-End",
 	"HEADER_TEXT_1": "Mi objetivo es crear todo tipo de %%highlight%%.",
