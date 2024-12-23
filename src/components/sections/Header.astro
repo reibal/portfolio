@@ -25,18 +25,18 @@ const i18n = getI18n({ currentLocale });
         <LocalizedText
           i18nLocalizedText={i18n.HEADER_TITLE}
           replaceFrom="%%name%%"
-          replaceTo=`${i18n.DEV_NAME}.`
-          replacementClass="text-gradient-to-br from-orange-500 via-amber-500/80 to-orange-600 dark:from-orange-400/85 dark:via-amber-300 dark:to-orange-400 font-bold"
+          replaceTo=`${i18n.DEV_NAME}`
+          className="text-gradient-to-br from-orange-400 via-amber-500 to-orange-500 dark:from-orange-400/85 dark:via-amber-400 dark:to-orange-400 font-bold"
         />
       </h1>
       <h2
-        class="text-xl md:text-3xl mt-1 md:mt-3 italic text-black/70 dark:text-slate-200"
+        class="text-xl md:text-2xl lg:text-3xl mt-1 md:mt-2.5 font-bold text-black/70 dark:text-slate-200"
       >
         <LocalizedText
           i18nLocalizedText={i18n.HEADER_SUBTITLE}
           replaceFrom="%%webdev%%"
           replaceTo={i18n.HEADER_SUBTITLE_WEBDEV}
-          replacementClass="text-gradient-to-b from-orange-300 to-amber-500 dark:from-orange-200 dark:to-amber-300"
+          className="text-gradient-to-b from-amber-600 to-orange-500 dark:from-orange-200 dark:to-amber-300"
         />
       </h2>
 
@@ -45,13 +45,13 @@ const i18n = getI18n({ currentLocale });
           i18nLocalizedText={i18n.HEADER_TEXT_1}
           replaceFrom="%%highlight%%"
           replaceTo={i18n.HEADER_TEXT_1_HIGHLIGHT}
-          replacementClass="text-amber-500 dark:text-amber-300"
+          className="text-amber-500 dark:text-amber-300"
         />
         <LocalizedText
           i18nLocalizedText={i18n.HEADER_TEXT_2}
           replaceFrom="%%highlight%%"
           replaceTo={i18n.HEADER_TEXT_2_HIGHLIGHT}
-          replacementClass="text-amber-500 dark:text-amber-300"
+          className="text-amber-500 dark:text-amber-300"
         />
       </p>
 
