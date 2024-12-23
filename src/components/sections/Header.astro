@@ -13,7 +13,7 @@ const i18n = getI18n({ currentLocale });
 
 <SectionContainer>
   <div
-    class="flex flex-col md:flex-row justify-center items-center text-center gap-8"
+    class="flex flex-col md:flex-row justify-center items-center lg:mx-6 text-center gap-8"
   >
     <img
       class="size-40 md:size-44 lg:size-56 aspect-square rounded-full border-4 border-amber-600 dark:border-orange-400 border-opacity-80 shadow-md shadow-amber-500/40"
@@ -30,17 +30,17 @@ const i18n = getI18n({ currentLocale });
         />
       </h1>
       <h2
-        class="text-xl md:text-xl lg:text-3xl mt-1 md:mt-2 font-bold text-black/70 dark:text-slate-200"
+        class="text-xl md:text-2xl lg:text-3xl mt-1 md:mt-2 font-bold text-black/70 dark:text-slate-200"
       >
         <LocalizedText
           i18nLocalizedText={i18n.HEADER_SUBTITLE}
           replaceFrom="%%webdev%%"
           replaceTo={i18n.HEADER_SUBTITLE_WEBDEV}
-          className="text-gradient-to-b from-amber-500 to-orange-500 dark:from-orange-200 dark:to-amber-300"
+          className="text-gradient-to-b from-amber-500 to-orange-500 dark:from-orange-300 dark:to-amber-300"
         />
       </h2>
 
-      <p class="my-4 mx-auto px-3 text-pretty">
+      <p class="my-4 mx-auto md:px-8 md:text-lg text-balance">
         <LocalizedText
           i18nLocalizedText={i18n.HEADER_TEXT_1}
           replaceFrom="%%highlight%%"
