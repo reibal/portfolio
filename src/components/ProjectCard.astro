@@ -1,10 +1,11 @@
 ---
 import ExternalLinkIcon from "./icons/ExternalLinkIcon.astro";
 
-const { title, description, link, image } = Astro.props;
+const { title, description, link, github, image } = Astro.props;
 
 // i18n import
 import { getI18n } from "../i18n";
+import GithubIcon from "./icons/GithubIcon.astro";
 // i18n setup
 const { currentLocale } = Astro;
 const i18n = getI18n({ currentLocale });
@@ -13,8 +14,8 @@ const i18n = getI18n({ currentLocale });
 <article
   class=`
 	flex flex-col
-  	bg-gray-50 dark:bg-gray-950/20 
-	shadow dark:shadow-white/5 
+  	bg-gray-50 dark:bg-gray-800/40 
+	shadow-md dark:shadow-white/5 
 	rounded-lg cursor-pointer hover:scale-105
 	transition-transform duration-300
   `
@@ -23,7 +24,7 @@ const i18n = getI18n({ currentLocale });
   <img
     src={image}
     alt={title}
-    class="w-full h-48 object-cover rounded-t-lg [mask-image:linear-gradient(to_bottom,black_95%,transparent);]"
+    class="w-full h-56 object-cover rounded-t-lg [mask-image:linear-gradient(to_bottom,black_95%,#000d_98%,transparent);]"
   />
 
   <div class="p-4 flex-grow">
@@ -37,15 +38,24 @@ const i18n = getI18n({ currentLocale });
     </p>
   </div>
 
-  <div class="p-4 pt-1">
+  <div class="p-4 pt-1 flex gap-3">
     <a
-      class="bg-black hover:bg-black/90 dark:hover:bg-black/80 shadow-sm dark:shadow-white/30 transition-colors text-white/90 text-lg rounded-lg px-4 py-2 w-full text-center flex items-center justify-center gap-2"
+      class="bg-slate-800 hover:bg-slate-700 dark:bg-gray-200/95 dark:hover:bg-amber-200 dark:text-black shadow dark:shadow-white/30 transition-colors duration-300 text-white/90 font-semibold text-lg rounded-lg px-4 py-2 w-full text-center flex items-center justify-center gap-2"
       href=`${link}`
       target="_blank"
       rel="noreferrer"
     >
+      <ExternalLinkIcon class="size-5" />
       {i18n.GO_TO_PROJECT}
-      <ExternalLinkIcon class="inline-block" />
+    </a>
+    <a
+      class="bg-slate-800 hover:bg-slate-700 dark:bg-gray-200/95 dark:hover:bg-blue-300 dark:text-black shadow dark:shadow-white/30 transition-colors duration-300 text-white/90 font-semibold text-lg rounded-lg px-4 py-2 w-full text-center flex items-center justify-center gap-2"
+      href=`${github}`
+      target="_blank"
+      rel="noreferrer"
+    >
+      <GithubIcon class="size-5" />
+      {i18n.GO_TO_GITHUB}
     </a>
   </div>
 </article>
