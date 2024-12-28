@@ -13,7 +13,7 @@ const i18n = getI18n({ currentLocale });
 
 <SectionContainer>
   <div
-    class="flex flex-col md:flex-row justify-center items-center lg:mx-6 text-center gap-8"
+    class="flex flex-col md:flex-row justify-center items-center lg:mx-6 px-4 md:px-10 text-center gap-8"
   >
     <img
       class="size-40 md:size-44 lg:size-56 aspect-square rounded-full border-4 border-amber-600 dark:border-orange-400 border-opacity-80 shadow-md shadow-amber-500/40"
@@ -21,12 +21,12 @@ const i18n = getI18n({ currentLocale });
       alt="Kazz's Profile Picture"
     />
     <div>
-      <h1 class="text-4xl md:text-5xl lg:text-6xl drop-shadow-sm">
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl drop-shadow-sm">
         <LocalizedText
           i18nLocalizedText={i18n.HEADER_TITLE}
           replaceFrom="%%name%%"
           replaceTo=`${i18n.DEV_NAME}`
-          className="text-gradient-to-br from-orange-400 via-amber-500 to-orange-500 dark:from-orange-400/85 dark:via-amber-400 dark:to-orange-400 font-bold"
+          className="font-bold text-gradient-to-br from-orange-400 via-amber-500 to-orange-500/90 dark:from-orange-400 dark:to-amber-400"
         />
       </h1>
       <h2
@@ -36,11 +36,11 @@ const i18n = getI18n({ currentLocale });
           i18nLocalizedText={i18n.HEADER_SUBTITLE}
           replaceFrom="%%webdev%%"
           replaceTo={i18n.HEADER_SUBTITLE_WEBDEV}
-          className="text-gradient-to-b from-amber-500 to-orange-500 dark:from-orange-300 dark:to-amber-300"
+          className="text-gradient-to-br from-orange-500 via-amber-500 to-orange-500 dark:from-orange-400/95 dark:via-amber-400/90 dark:to-orange-400/95"
         />
       </h2>
 
-      <p class="my-4 mt-3 mx-auto md:px-8 md:text-lg text-pretty">
+      <p class="my-4 mt-3 mx-auto md:px-6 lg:text-lg text-pretty">
         <LocalizedText
           i18nLocalizedText={i18n.HEADER_TEXT_1}
           replaceFrom="%%highlight%%"
