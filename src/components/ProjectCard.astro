@@ -13,8 +13,8 @@ const i18n = getI18n({ currentLocale });
 <article
   class=`
 	flex flex-col
-  	bg-gray-50 dark:bg-gray-700/50 
-	shadow-lg dark:shadow-white/10 
+  	bg-gray-50 dark:bg-gray-950/20 
+	shadow dark:shadow-white/5 
 	rounded-lg cursor-pointer hover:scale-105
 	transition-transform duration-300
   `
@@ -28,11 +28,11 @@ const i18n = getI18n({ currentLocale });
 
   <div class="p-4 flex-grow">
     <h1
-      class="text-2xl font-semibold mb-0.5 text-orange-950 dark:text-amber-400 cursor-pointer"
+      class="text-2xl font-semibold mb-0.5 text-black dark:text-amber-500 cursor-pointer"
     >
       {title[currentLocale || "es"]}
     </h1>
-    <p class="text-gray-600 dark:text-gray-200/90 cursor-pointer flex-grow">
+    <p class="text-gray-600 dark:text-white cursor-pointer flex-grow">
       {description[currentLocale || "es"]}
     </p>
   </div>
