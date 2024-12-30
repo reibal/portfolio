@@ -3,7 +3,8 @@ import SectionContainer from "../../SectionContainer.astro";
 
 // i18n import
 import { getI18n } from "../../../i18n";
-import Badge from '../../Badge.astro'
+import Badge from "../../Badge.astro";
+import SectionTitle from "../../SectionTitle.astro";
 // i18n setup
 const { currentLocale } = Astro;
 const i18n = getI18n({ currentLocale });
@@ -29,14 +30,18 @@ const skills = [
 ---
 
 <SectionContainer>
-  <h1 class="text-3xl md:text-4xl font-bold mb-5 md:mb-7">
-    <span class="text-orange-500/95 dark:text-orange-400">&lt;/&gt;</span>
-    <span class="text-amber-500 dark:text-amber-400 ml-1">{i18n.MY_SKILLS}</span>
-  </h1>
+  <SectionTitle>
+    <span slot="icon">&lt;/&gt;</span>
+    <span slot="title">{i18n.MY_SKILLS}</span>
+  </SectionTitle>
+
   <div class="flex flex-wrap justify-start gap-4">
     {
       skills.map((skill) => (
-        <Badge class="border border-amber-500 dark:border-orange-800 font-semibold text-lg lg:text-base" color='yellow'>
+        <Badge
+          class="border border-amber-500 dark:border-orange-800 font-semibold text-lg lg:text-base"
+          color="yellow"
+        >
           {skill}
         </Badge>
       ))
