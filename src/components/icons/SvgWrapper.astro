@@ -8,9 +8,9 @@ const props = Astro.props;
   height="24"
   viewBox="0 0 24 24"
   fill="none"
-  stroke="currentColor"
   stroke-linecap="round"
   stroke-linejoin="round"
+  stroke={props["stroke"] || "currentColor"}
   stroke-width={props["stroke-width"] || "2"}
   {...props}
 >
