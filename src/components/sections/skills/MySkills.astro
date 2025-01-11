@@ -18,15 +18,13 @@ const i18n = getI18n({ currentLocale });
     <span slot="title">{i18n.MY_SKILLS}</span>
   </SectionTitle>
 
-  <div class="flex flex-wrap justify-start gap-4">
+  <div class="flex flex-wrap justify-start gap-3">
     {
       skills.map((skill) => (
-        <Badge
-          class="border border-amber-500 dark:border-orange-800 font-semibold text-lg lg:text-base"
-          color="yellow"
-        >
-          {skill.name}
-        </Badge>
+        <Badge class="px-4 py-2 flex flex-col justify-center items-center gap-1 md:text-lg">
+			<skill.icon stroke-width="1.6" class="size-8 pt-0.5" />
+			{skill.name}
+		</Badge>
       ))
     }
   </div>

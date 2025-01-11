@@ -11,6 +11,7 @@ import CssIcon from '../components/icons/technologies/CssIcon.astro'
 import NodeJSIcon from '../components/icons/technologies/NodeJSIcon.astro'
 import DatabaseIcon from '../components/icons/technologies/DatabaseIcon.astro'
 import ExpressIcon from '../components/icons/technologies/ExpressIcon.astro'
+import MongoDBIcon from '../components/icons/technologies/MongoDBIcon.astro'
 
 export default [
 	{
@@ -42,12 +43,8 @@ export default [
 		icon: AstroIcon
 	},
 	{
-		name: "Tailwind",
+		name: "TailwindCSS",
 		icon: TailwindIcon
-	},
-	{
-		name: "React Native",
-		icon: ReactIcon
 	},
 	{
 		name: "NodeJS",
@@ -56,6 +53,10 @@ export default [
 	{
 		name: "Express",
 		icon: ExpressIcon
+	},
+	{
+		name: "React Native",
+		icon: ReactIcon
 	},
 	{
 		name: "MySQL",
@@ -67,7 +68,7 @@ export default [
 	},
 	{
 		name: "MongoDB",
-		icon: DatabaseIcon
+		icon: MongoDBIcon
 	},
 	{
 		name: "Git",
