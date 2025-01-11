@@ -3,30 +3,13 @@ import SectionContainer from "../SectionContainer.astro";
 import SectionTitle from "../SectionTitle.astro";
 import Badge from "../../Badge.astro";
 
+import skills from "../../../data/skills";
+
 // i18n import
 import { getI18n } from "../../../i18n";
 // i18n setup
 const { currentLocale } = Astro;
 const i18n = getI18n({ currentLocale });
-
-// Data
-const skills = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "NextJS",
-  "Astro",
-  "Tailwind",
-  "React Native",
-  "NodeJS",
-  "Express",
-  "MySQL",
-  "MongoDB",
-  "Git",
-  "GitHub",
-];
 ---
 
 <SectionContainer>
@@ -42,7 +25,7 @@ const skills = [
           class="border border-amber-500 dark:border-orange-800 font-semibold text-lg lg:text-base"
           color="yellow"
         >
-          {skill}
+          {skill.name}
         </Badge>
       ))
     }
