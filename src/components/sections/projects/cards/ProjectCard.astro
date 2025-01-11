@@ -1,12 +1,15 @@
 ---
+import type { AstroComponentFactory } from "astro/runtime/server/index.js";
 import ExternalLinkIcon from "../../../icons/ExternalLinkIcon.astro";
 import GithubIcon from "../../../icons/GithubIcon.astro";
+// Components
+import ProjectCardLink from "./ProjectCardLink.astro";
 
-const { title, description, link, github, image } = Astro.props;
+const { title, description, link, github, image, technologies } = Astro.props;
 
 // i18n import
 import { getI18n } from "../../../../i18n";
-import ProjectCardLink from "./ProjectCardLink.astro";
+import TechnologyBadge from "./TechnologyBadge.astro";
 // i18n setup
 const { currentLocale } = Astro;
 const i18n = getI18n({ currentLocale });
@@ -15,7 +18,7 @@ const i18n = getI18n({ currentLocale });
 <article
   class=`
 	flex flex-col
-  	bg-gray-50 dark:bg-gray-800/40 
+  	bg-white dark:bg-gray-800/40 
 	shadow-md dark:shadow-white/5 
 	rounded-lg cursor-pointer md:hover:scale-105
 	transition-transform duration-300
@@ -28,7 +31,7 @@ const i18n = getI18n({ currentLocale });
     class="w-full h-56 object-cover rounded-t-lg [mask-image:linear-gradient(to_bottom,black_95%,#000d_98%,transparent);]"
   />
 
-  <div class="p-4 flex-grow">
+  <div class="p-4 pb-3">
     <h1
       class="text-2xl font-semibold mb-0.5 text-black dark:text-amber-500 cursor-pointer"
     >
@@ -39,13 +42,25 @@ const i18n = getI18n({ currentLocale });
     </p>
   </div>
 
+  <div class="px-4 pb-4 flex-grow">
+    <div class="flex flex-wrap gap-2 text-sm">
+      {
+        technologies?.map(
+          (technology: { name: string; icon: AstroComponentFactory }) => (
+            <TechnologyBadge key={technology.name} technology={technology} />
+          )
+        )
+      }
+    </div>
+  </div>
+
   <div class="p-4 pt-1 flex gap-3">
     <!-- VISIT PROJECT (LINK) -->
     <ProjectCardLink
       class=`text-white/90 bg-slate-800 
 	  		hover:text-white hover:bg-slate-950
 	  		dark:text-black dark:bg-gray-100
-			dark:hover:text-slate-900 dark:hover:bg-gray-300 dark:hover:border-blue-800`
+			dark:hover:text-blue-900 dark:hover:bg-blue-50 dark:hover:border-blue-800`
       href=`${link}`
     >
       <ExternalLinkIcon class="size-5" stroke-width="2" />

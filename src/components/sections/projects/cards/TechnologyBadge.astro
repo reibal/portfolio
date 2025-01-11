@@ -1,0 +1,9 @@
+---
+import Badge from '../../../Badge.astro'
+const { technology: { name, icon: Icon } } = Astro.props;
+---
+
+<Badge class="flex items-center gap-1.5 px-2 md:px-2.5 w-fit">
+  <Icon class="size-5 pt-0.5" />
+  <span class="text-sm">{name}</span>
+</Badge>
