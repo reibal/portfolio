@@ -7,6 +7,7 @@ import projects from "../../../data/projects";
 
 // i18n import
 import { getI18n } from "../../../i18n";
+import ProjectsSectionIcon from '../../icons/sections/ProjectsSectionIcon.astro'
 
 // i18n setup
 const { currentLocale } = Astro;
@@ -15,7 +16,9 @@ const i18n = getI18n({ currentLocale });
 
 <SectionContainer>
   <SectionTitle>
-    <span slot="icon">&lt;/&gt;</span>
+    <span slot="icon">
+		<ProjectsSectionIcon class="size-8 md:size-9" stroke-width="1.8" />
+	</span>
     <span slot="title">{i18n.MY_PROJECTS}</span>
   </SectionTitle>
 

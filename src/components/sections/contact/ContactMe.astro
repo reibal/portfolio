@@ -4,6 +4,7 @@ import SectionTitle from "../SectionTitle.astro";
 
 // i18n import
 import { getI18n } from "../../../i18n";
+import ContactSectionIcon from "../../icons/sections/ContactSectionIcon.astro";
 // i18n setup
 const { currentLocale } = Astro;
 const i18n = getI18n({ currentLocale });
@@ -11,7 +12,10 @@ const i18n = getI18n({ currentLocale });
 
 <SectionContainer>
   <SectionTitle>
-    <span slot="icon">&lt;/&gt;</span>
+    <span slot="icon">
+      <ContactSectionIcon class="size-8 md:size-9" stroke-width="1.8" />
+    </span>
+
     <span slot="title">{i18n.CONTACT_ME}</span>
   </SectionTitle>
 
