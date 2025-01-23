@@ -15,8 +15,8 @@ export default [
 			en: "GlitchLink",
 		},
 		description: {
-			es: "Una red social para gamers. Desarrollada con NextJS y TailwindCSS, y con la autenticación de NextAuth.",
-			en: "A social network for gamers. Developed with NextJS and TailwindCSS, and with NextAuth for authentication.",
+			es: "Una red social para gamers, en la que tener tu lista de juegos favoritos y agregar a gente para jugar juntos.",
+			en: "A social network for gamers, where you can have your list of favorite games and add people to play together."
 		},
 		technologies: [
 			{
@@ -51,28 +51,5 @@ export default [
 		link: "https://glitchlink.vercel.app",
 		github: "https://github.com/KazzK94/glitchlink",
 		image: "/images/projects/glitchlink-plain.avif",
-	},
-	{
-		title: {
-			es: "Portafolio de dibujo",
-			en: "Drawing Portfolio",
-		},
-		description: {
-			es: "El portafolio de Haru Blue, una artista digital. La página se ha creado con Astro y TailwindCSS.",
-			en: "The drawing portfolio of the digital artist Haru Blue. Site created with Astro and TailwindCSS.",
-		},
-		technologies: [
-			{
-				name: "Astro",
-				icon: AstroIcon,
-			},
-			{
-				name: "Tailwind",
-				icon: TailwindIcon,
-			},
-		],
-		link: "https://harublue.netlify.app/",
-		github: "https://github.com/KazzK94/haru-portfolio",
-		image: "/images/projects/harublue-portfolio-plain.avif",
-	},
+	}
 ]
