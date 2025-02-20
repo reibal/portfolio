@@ -50,6 +50,6 @@ export default [
 		],
 		link: "https://glitchlink.vercel.app",
 		github: "https://github.com/KazzK94/glitchlink",
-		image: "/images/projects/glitchlink-plain.avif",
+		image: "/images/projects/glitchlink.webp",
 	}
 ]
