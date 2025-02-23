@@ -24,9 +24,9 @@ const i18n = getI18n({ currentLocale });
   <div class="flex flex-wrap justify-start gap-3">
     {
       skills.map((skill) => (
-        <Badge class="px-4 py-2 flex flex-col justify-center items-center gap-1 md:text-lg">
+        <Badge class="px-4 py-2 flex flex-col justify-center items-center gap-1 md:text-base bg-slate-200/60 hover:bg-slate-200/95 dark:bg-slate-800/80 dark:hover:bg-slate-800 transition-all">
           <skill.icon stroke-width="1.6" class="size-8 pt-0.5" />
-          {skill.name}
+          <span class="pointer-events-none">{skill.name}</span>
         </Badge>
       ))
     }
