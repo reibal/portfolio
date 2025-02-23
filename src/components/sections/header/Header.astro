@@ -13,7 +13,7 @@ const i18n = getI18n({ currentLocale });
 
 <SectionContainer>
   <div
-    class="flex flex-col md:flex-row justify-center items-center lg:mx-6 px-4 md:px-10 text-center gap-8"
+    class="flex flex-col md:flex-row justify-center items-center lg:mx-6 px-4 md:px-10 text-center gap-8 mb-8"
   >
     <img
       class="size-40 md:size-44 lg:size-56 aspect-square rounded-full border-4 border-amber-600 dark:border-orange-400 border-opacity-80 shadow-md shadow-amber-500/40"
@@ -45,19 +45,15 @@ const i18n = getI18n({ currentLocale });
           i18nLocalizedText={i18n.HEADER_TEXT_1}
           replaceFrom="%%highlight%%"
           replaceTo={i18n.HEADER_TEXT_1_HIGHLIGHT}
-          className="text-amber-500 font-semibold dark:text-amber-300"
+          className="text-amber-500 font-semibold dark:text-amber-400"
         />
         <LocalizedText
           i18nLocalizedText={i18n.HEADER_TEXT_2}
           replaceFrom="%%highlight%%"
           replaceTo={i18n.HEADER_TEXT_2_HIGHLIGHT}
-          className="text-amber-500 font-semibold dark:text-amber-300"
+          className="text-amber-500 font-semibold dark:text-amber-400"
         />
       </p>
-
-	  <p class="mt-2 italic text-sm text-red-500 dark:text-red-300">
-		{i18n.HEADER_DISCLAIMER}
-	  </p>
 
       <Badge class="text-sm mt-4" color="green">
         {i18n.AVAILABLE_FOR_WORK}
