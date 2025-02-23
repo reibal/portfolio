@@ -9,21 +9,24 @@ import Footer from "./sections/footer/Footer.astro";
 
 // i18n
 import { getI18n } from "../i18n/index.ts";
-const currentLocale = Astro.props.currentLocale
+import AboutMe from "./sections/about/AboutMe.astro";
+const currentLocale = Astro.props.currentLocale;
 const i18n = getI18n({ currentLocale });
 ---
 
 <Layout title={i18n.META_TITLE} description={i18n.META_DESCRIPTION}>
-  <main class="mt-24 md:mt-48 flex flex-col gap-20 md:gap-32">
+  <main class="mt-24 md:mt-48 flex flex-col gap-20 md:gap-20">
     <Header />
 
     <MyProjects />
 
+    <div class="bg-slate-100 dark:bg-slate-800/50 py-8 md:py-12">
+      <AboutMe />
+    </div>
+
     <MySkills />
 
-    <div
-      class="bg-slate-200/60 dark:bg-slate-800/50 pt-8 md:pt-12 pb-10 md:pb-20"
-    >
+    <div class="bg-slate-100 dark:bg-slate-800/50 pt-8 md:pt-12 pb-10 md:pb-20">
       <ContactMe />
     </div>
   </main>

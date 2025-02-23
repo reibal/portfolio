@@ -1,0 +1,43 @@
+---
+import SectionContainer from "../SectionContainer.astro";
+import SectionTitle from "../SectionTitle.astro";
+import Badge from "../../Badge.astro";
+
+import skills from "../../../data/skills";
+
+// i18n import
+import { getI18n } from "../../../i18n";
+import AboutMeIcon from "../../icons/sections/AboutMeSectionIcon.astro";
+// i18n setup
+const { currentLocale } = Astro;
+const i18n = getI18n({ currentLocale });
+---
+
+<SectionContainer>
+  <div
+    class="grid grid-cols-1 md:grid-cols-12 justify-between gap-x-12 gap-y-4"
+  >
+    <div class="md:col-span-7">
+      <SectionTitle>
+        <span slot="icon">
+          <AboutMeIcon class="size-8 md:size-9" stroke-width="1.8" />
+        </span>
+        <span slot="title">{i18n.ABOUT_ME}</span>
+      </SectionTitle>
+
+      <div class="text-lg space-y-3">
+        <p>{i18n.ABOUT_ME_TEXT_1}</p>
+        <p>{i18n.ABOUT_ME_TEXT_2}</p>
+        <p class="text-amber-500 dark:text-amber-400 font-semibold">
+          {i18n.ABOUT_ME_TEXT_CLOSURE}
+        </p>
+      </div>
+    </div>
+
+    <img
+      class="md:col-span-5 w-full h-full mt-2 object-cover rounded-lg shadow-lg"
+      src="/images/about.jpeg"
+      alt="Iván programando"
+    />
+  </div>
+</SectionContainer>
