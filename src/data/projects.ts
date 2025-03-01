@@ -110,7 +110,7 @@ export default [
 				icon: MongoDBIcon
 			}
 		],
-		link: "https://shorturl.netlify.app/",
+		link: "https://smolerurl.netlify.app/",
 		github: "https://github.com/KazzK94/url-shortener-client",
 		image: "/images/projects/urlshortener.webp"
 	}
