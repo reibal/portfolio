@@ -5,6 +5,7 @@ import Badge from "../../Badge.astro";
 
 // i18n import
 import { getI18n } from "../../../i18n";
+import BriefcaseIcon from '../../icons/BriefcaseIcon.astro'
 
 // i18n setup
 const { currentLocale = "es" } = Astro;
@@ -55,7 +56,8 @@ const i18n = getI18n({ currentLocale });
         />
       </p>
 
-      <Badge class="text-sm mt-4" color="green">
+      <Badge class="flex justify-center items-center text-sm mt-4" color="green">
+		<BriefcaseIcon class="size-4 mr-1.5" />
         {i18n.AVAILABLE_FOR_WORK}
       </Badge>
     </div>
