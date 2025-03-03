@@ -5,11 +5,11 @@ import NextAuthIcon from '../components/icons/technologies/NextAuthIcon.astro'
 import PrismaIcon from '../components/icons/technologies/PrismaIcon.astro'
 import DatabaseIcon from '../components/icons/technologies/DatabaseIcon.astro'
 import ReactIcon from '../components/icons/technologies/ReactIcon.astro'
-import AstroIcon from '../components/icons/technologies/AstroIcon.astro'
 import AngularIcon from '../components/icons/technologies/AngularIcon.astro'
 import CssIcon from '../components/icons/technologies/CssIcon.astro'
 import MongoDBIcon from '../components/icons/technologies/MongoDBIcon.astro'
 import ExpressIcon from '../components/icons/technologies/ExpressIcon.astro'
+import TypeScriptIcon from '../components/icons/technologies/TypeScriptIcon.astro'
 
 // Projects Data
 export default [
@@ -30,6 +30,10 @@ export default [
 			{
 				name: "React",
 				icon: ReactIcon,
+			},
+			{
+				name: "TypeScript",
+				icon: TypeScriptIcon
 			},
 			{
 				name: "Tailwind",
@@ -58,39 +62,12 @@ export default [
 	},
 	{
 		title: {
-			es: "Study Decks",
-			en: "Study Decks"
+			es: "Acortador de URLs",
+			en: "Link Shortener"
 		},
 		description: {
-			es: "Una aplicación muy sencilla para crear tus propias tarjetas de estudio y repasar de manera fácil y entretenida.",
-			en: "A very simple application to create your own study cards and review them in an easy and entertaining way."
-		},
-		technologies: [
-			{
-				name: "React",
-				icon: ReactIcon,
-			},
-			{
-				name: "Tailwind",
-				icon: TailwindIcon,
-			},
-			{
-				name: "Local Storage",
-				icon: DatabaseIcon
-			}
-		],
-		link: "https://cardstudy.netlify.app/",
-		github: "https://github.com/KazzK94/study-cards",
-		image: "/images/projects/studydecks.webp"
-	},
-	{
-		title: {
-			es: "Acortador de URLs (en proceso)",
-			en: "Link Shortener (WIP)"
-		},
-		description: {
-			es: "Un acortador de URLs muy simple. Este proyecto es el Front-End, la lógica para acortar la URL y guardar la información y las visitas está en el back-end indicado en el archivo README.md del repositorio de GitHub.",
-			en: "A URL shortener that is very simple. This project is the Front-End, the logic to shorten the URL and save the information and visits is in the back-end indicated in the README.md file in the GitHub repository."
+			es: "El frontend de un acortador de URLs muy simple. Para ver el backend, clica en el enlace que hay en el archivo README.md del repositorio de GitHub.",
+			en: "The frontend for a very simple URL shortener. To see the backend, please click on the link in the README.md file of the GitHub repository."
 		},
 		technologies: [
 			{
