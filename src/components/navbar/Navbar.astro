@@ -1,0 +1,82 @@
+---
+import ThemeToggleButton from "./togglers/ThemeToggleButton.astro";
+import LanguageToggleButton from "./togglers/LanguageToggleButton.astro";
+import SectionContainer from "../sections/SectionContainer.astro";
+import NavbarLink from "./NavbarLink.astro";
+import HamburgerMenuIcon from "../icons/HamburgerMenuIcon.astro";
+import { getI18n } from "../../i18n";
+
+// i18n setup
+const { currentLocale = "es" } = Astro;
+const i18n = getI18n({ currentLocale });
+---
+
+<nav
+  class=`
+  	fixed top-0 left-0 right-0 h-16 z-10 
+	bg-slate-200/30 dark:bg-gray-900/50 border-b border-slate-300/20 dark:border-slate-600/10 backdrop-blur-md shadow-lg
+	`
+>
+  <SectionContainer class="h-full flex justify-between pt-0 pb-0">
+    <div class="flex items-center">
+      <HamburgerMenuIcon
+        id="menu-toggler"
+        class="size-10 md:hidden"
+        stroke-width="1.5"
+      />
+      <div
+        id="menu-container"
+        class="invisible md:visible fixed md:static top-16 h-dvh md:h-auto left-0 right-0 bg-gray-50/95 dark:bg-slate-950/90 md:bg-transparent md:dark:bg-transparent"
+      >
+        <ul
+          class=`flex flex-col md:flex-row h-full justify-center items-center gap-x-4 gap-y-12 px-4 pb-6 md:p-0
+		  	text-2xl md:text-lg text-center text-gray-950 dark:text-gray-100`
+        >
+          <li>
+            <NavbarLink href="#">{i18n.HOME}</NavbarLink>
+          </li>
+
+          <span class="hidden md:inline">·</span>
+
+          <li>
+            <NavbarLink href="#projects">{i18n.PROJECTS}</NavbarLink>
+          </li>
+
+          <span class="hidden md:inline">·</span>
+
+          <li>
+            <NavbarLink href="#about">{i18n.ABOUT}</NavbarLink>
+          </li>
+
+          <span class="hidden md:inline">·</span>
+
+          <li>
+            <NavbarLink href="#skills">{i18n.SKILLS}</NavbarLink>
+          </li>
+
+          <span class="hidden md:inline">·</span>
+
+          <li>
+            <NavbarLink href="#contact">{i18n.CONTACT}</NavbarLink>
+          </li>
+		  <li class="md:hidden"><!-- Pusher element for mobile, do not delete --></li>
+        </ul>
+      </div>
+    </div>
+    <div class="flex items-center gap-4">
+      <LanguageToggleButton />
+      <ThemeToggleButton />
+    </div>
+  </SectionContainer>
+</nav>
+
+<script>
+  document.getElementById("menu-toggler")?.addEventListener("click", () => {
+    document.getElementById("menu-container")?.classList.toggle("invisible");
+  });
+  document.querySelectorAll("#menu-container a").forEach((link) => {
+    link.addEventListener("click", () => {
+      document.getElementById("menu-container")?.classList.add("invisible");
+    });
+  });
+</script>

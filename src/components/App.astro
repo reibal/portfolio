@@ -10,23 +10,28 @@ import Footer from "./sections/footer/Footer.astro";
 // i18n
 import { getI18n } from "../i18n/index.ts";
 import AboutMe from "./sections/about/AboutMe.astro";
+import Marker from "./Marker.astro";
 const currentLocale = Astro.props.currentLocale;
 const i18n = getI18n({ currentLocale });
 ---
 
 <Layout title={i18n.META_TITLE} description={i18n.META_DESCRIPTION}>
-  <main class="mt-24 md:mt-48 flex flex-col gap-20 md:gap-20">
+  <main class="mt-24 md:mt-32 flex flex-col">
     <Header />
 
+    <Marker id="projects" />
     <MyProjects />
 
-    <div class="bg-slate-100 dark:bg-slate-800/50 py-8 md:py-12">
+    <Marker id="about" />
+    <div class="bg-slate-100 dark:bg-slate-800/50">
       <AboutMe />
     </div>
 
+    <Marker id="skills" />
     <MySkills />
 
-    <div class="bg-slate-100 dark:bg-slate-800/50 pt-8 md:pt-12 pb-10 md:pb-20">
+    <Marker id="contact" />
+    <div class="bg-slate-100 dark:bg-slate-800/50">
       <ContactMe />
     </div>
   </main>

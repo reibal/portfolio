@@ -1,6 +1,11 @@
 {
 	"META_TITLE": "Iván Reina, Frontend Web Developer",
 	"META_DESCRIPTION": "Check my portfolio to see how I create modern, responsive, and accessible websites. Have a look at my projects!",
+	"HOME": "Home",
+	"PROJECTS": "Projects",
+	"ABOUT": "About me",
+	"SKILLS": "Skills",
+	"CONTACT": "Contact",
 	"HEADER_TITLE": "%%name%%",
 	"DEV_NAME": "Ivan Reina",
 	"HEADER_SUBTITLE": "%%webdev%%",
