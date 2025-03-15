@@ -2,12 +2,6 @@
 import GithubIcon from "../../icons/technologies/GithubIcon.astro";
 import LinkedinIcon from "../../icons/technologies/LinkedinIcon.astro";
 import EmailIcon from "../../icons/EmailIcon.astro";
-
-// i18n import
-import { getI18n } from "../../../i18n";
-// i18n setup
-const { currentLocale } = Astro;
-const i18n = getI18n({ currentLocale });
 ---
 
 <footer
@@ -19,7 +13,7 @@ const i18n = getI18n({ currentLocale });
         href="https://github.com/KazzK94"
         target="_blank"
         class="hover:text-orange-500 hover:scale-110 transition-all"
-        aria-label="Visit my GitHub profile"
+        aria-label="GitHub"
       >
         <GithubIcon class="size-10" stroke-width="1.8" />
       </a>
@@ -27,7 +21,7 @@ const i18n = getI18n({ currentLocale });
         href="https://www.linkedin.com/in/ivan-kazz/"
         target="_blank"
         class="hover:text-orange-500 hover:scale-110 transition-all cursor-pointer"
-        aria-label="Visit my LinkedIn"
+        aria-label="LinkedIn"
       >
         <LinkedinIcon class="size-10" stroke-width="1.8" />
       </a>
@@ -35,7 +29,7 @@ const i18n = getI18n({ currentLocale });
         id="emailIcon"
         href="mailto:ireinaballester@gmail.com"
         class="hover:text-orange-500 hover:scale-110 transition-all cursor-pointer"
-        aria-label="Send me an e-mail"
+        aria-label="E-mail"
       >
         <EmailIcon class="size-10" stroke-width="1.8" />
       </a>
