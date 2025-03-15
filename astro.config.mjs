@@ -9,7 +9,7 @@ export default defineConfig({
 	site: "https://reibal.dev",
 	integrations: [tailwind()],
 	adapter: netlify(),
-	output: "static",
+	output: "server",
 	i18n: {
 		defaultLocale: "es",
 		locales: ["es", "en"],
