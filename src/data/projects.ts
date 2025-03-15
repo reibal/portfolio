@@ -56,7 +56,7 @@ export default [
 				icon: DatabaseIcon
 			}
 		],
-		link: "https://glitchlink.vercel.app",
+		link: "https://glitchlink.reibal.dev",
 		github: "https://github.com/KazzK94/glitchlink",
 		image: "/images/projects/glitchlink.webp"
 	},
