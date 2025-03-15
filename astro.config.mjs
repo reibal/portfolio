@@ -13,7 +13,9 @@ export default defineConfig({
 	i18n: {
 		defaultLocale: "es",
 		locales: ["es", "en"],
-		prefixDefaultLocale: false,
+		routing: {
+			prefixDefaultLocale: false,
+		},
 		domains: {
 			"es": "https://reibal.dev",
 			"en": "https://en.reibal.dev"
