@@ -87,7 +87,7 @@ export default [
 				icon: MongoDBIcon
 			}
 		],
-		link: "https://smolerurl.netlify.app/",
+		link: "https://smol.reibal.dev/",
 		github: "https://github.com/KazzK94/url-shortener-client",
 		image: "/images/projects/urlshortener.webp"
 	}
