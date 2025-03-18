@@ -5,11 +5,12 @@ import NextAuthIcon from '../components/icons/technologies/NextAuthIcon.astro'
 import PrismaIcon from '../components/icons/technologies/PrismaIcon.astro'
 import DatabaseIcon from '../components/icons/technologies/DatabaseIcon.astro'
 import ReactIcon from '../components/icons/technologies/ReactIcon.astro'
-import AngularIcon from '../components/icons/technologies/AngularIcon.astro'
 import CssIcon from '../components/icons/technologies/CssIcon.astro'
 import MongoDBIcon from '../components/icons/technologies/MongoDBIcon.astro'
 import ExpressIcon from '../components/icons/technologies/ExpressIcon.astro'
 import TypeScriptIcon from '../components/icons/technologies/TypeScriptIcon.astro'
+import AstroIcon from '../components/icons/technologies/AstroIcon.astro'
+import ClerkIcon from '../components/icons/technologies/ClerkIcon.astro'
 
 // Projects Data
 export default [
@@ -62,21 +63,25 @@ export default [
 	},
 	{
 		title: {
-			es: "Acortador de URLs",
-			en: "Link Shortener"
+			es: "SMOL (en desarrollo)",
+			en: "SMOL (work in progress)"
 		},
 		description: {
-			es: "El frontend de un acortador de URLs muy simple. Para ver el backend, clica en el enlace que hay en el archivo README.md del repositorio de GitHub.",
-			en: "The frontend for a very simple URL shortener. To see the backend, please click on the link in the README.md file of the GitHub repository."
+			es: "Un acortador de URLs con rastreo de visitas. La lógica está separada en Front-End (con Astro) y Back-End (con NodeJS + Express).",
+			en: "A URL shortener that also tracks visits. The logic is separated into the Front-End (with Astro) and the Back-End (with NodeJS + Express)."
 		},
 		technologies: [
 			{
-				name: "Angular 19",
-				icon: AngularIcon
+				name: "Astro",
+				icon: AstroIcon
 			},
 			{
 				name: "CSS",
 				icon: CssIcon
+			},
+			{
+				name: "TypeScript",
+				icon: TypeScriptIcon
 			},
 			{
 				name: "Express",
@@ -85,6 +90,10 @@ export default [
 			{
 				name: "MongoDB",
 				icon: MongoDBIcon
+			},
+			{
+				name: "Clerk",
+				icon: ClerkIcon
 			}
 		],
 		link: "https://smol.reibal.dev/",
