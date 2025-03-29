@@ -63,8 +63,8 @@ export default [
 	},
 	{
 		title: {
-			es: "SMOL (en desarrollo)",
-			en: "SMOL (work in progress)"
+			es: "SMOL",
+			en: "SMOL"
 		},
 		description: {
 			es: "Un acortador de URLs con rastreo de visitas. La lógica está separada en Front-End (con Astro) y Back-End (con NodeJS + Express).",
