@@ -12,6 +12,8 @@ import NodeJSIcon from '../components/icons/technologies/NodeJSIcon.astro'
 import DatabaseIcon from '../components/icons/technologies/DatabaseIcon.astro'
 import ExpressIcon from '../components/icons/technologies/ExpressIcon.astro'
 import MongoDBIcon from '../components/icons/technologies/MongoDBIcon.astro'
+import TestIcon from '../components/icons/technologies/TestIcon.astro'
+import CypressIcon from '../components/icons/technologies/CypressIcon.astro'
 
 export default [
 	{
@@ -69,6 +71,18 @@ export default [
 	{
 		name: "MongoDB",
 		icon: MongoDBIcon
+	},
+	{
+		name: "Playwright",
+		icon: TestIcon
+	},
+	{
+		name: "Cypress",
+		icon: CypressIcon
+	},
+	{
+		name: "Karate",
+		icon: TestIcon
 	},
 	{
 		name: "Git",
