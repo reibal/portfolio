@@ -20,7 +20,7 @@
 	"GO_TO_GITHUB": "GitHub",
 	"ABOUT_ME": "About Me",
 	"ABOUT_ME_TEXT_1": "Hello! My name is Ivan and I am a Front-End Web Developer in Valencia, although I usually create Full-Stack projects to build complete applications. My main technical skill is React, but I am always learning new frameworks and programming languages when the need arises (or when curiosity does).",
-	"ABOUT_ME_TEXT_2": "I am currently working as a QA at Sopra Steria, where I am learning about ISTQB and how to perform manual and automated testing in projects.",
+	"ABOUT_ME_TEXT_2": "I am currently working as a QA at Sopra Steria, where I am learning about ISTQB and how to perform manual and automated testing in projects. For now, I am automating tests with Playwright for E2E testing and with Karate for API testing.",
 	"MY_SKILLS": "My Skills",
 	"CONTACT_ME": "Contact Me",
 	"FORM_NAME_PLACEHOLDER": "Name",
